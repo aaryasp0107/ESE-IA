@@ -1,0 +1,281 @@
+S 1 % 1. Program for the generation of rectangular signal 
+% Continuous-Time (CT):
+ t = -5:0.01:5;  % Time vector
+ rect_ct = (t >= -1 & t <= 1);  % Rectangular pulse in CT
+ figure;
+ plot(t, rect_ct);
+ title('Rectangular Signal (CT)');
+ xlabel('Time (t)');
+ ylabel('Amplitude');
+% Discrete-Time (DT):
+ n = -5:5;  % Discrete time vector
+ rect_dt = (n >= -2 & n <= 2);  % Rectangular pulse in DT
+ figure;
+ stem(n, rect_dt);
+ title('Rectangular Signal (DT)');
+ xlabel('n');
+ ylabel('Amplitude');
+
+% 2. Program for the generation of unit impulse signal.
+ % Continuous-Time (CT):
+ t = -5:0.01:5;    % Time vector
+ impulse_ct = t == 0; % Unit impulse in CT
+ figure;
+ stem(t, impulse_ct);
+ title('Unit Impulse Signal (CT)');
+ xlabel('Time (t)');
+ ylabel('Amplitude');
+  % Discrete-Time (DT):
+ n = -5:5;    % Discrete time vector
+ impulse_dt = (n == 0);   % Unit impulse in DT
+ figure;
+ stem(n, impulse_dt);
+ title('Unit Impulse Signal (DT)');
+ xlabel('n');
+ ylabel('Amplitude');
+
+ % 3. Program for the generation of exponential sequence
+ % Continuous-Time (CT):
+ t = -5:0.01:5;    
+% Time vector
+ exp_ct = exp(t);  % Exponential in CT
+ figure;
+ plot(t, exp_ct);
+ title('Exponential Signal (CT)');
+ xlabel('Time (t)');
+ ylabel('Amplitude');
+ % Discrete-Time (DT):
+ n = -5:5;    
+% Discrete time vector
+ exp_dt = exp(n);   
+% Exponential in DT
+ figure;
+ stem(n, exp_dt);
+ title('Exponential Signal (DT)');
+ xlabel('n');
+ ylabel('Amplitude');
+
+ % 4. Program for the generation of unit step signal
+ % Continuous-Time (CT):
+ t = -5:0.01:5;    
+% Time vector
+ step_ct = t >= 0; % Unit step in CT
+ figure;
+ plot(t, step_ct);
+ title('Unit Step Signal (CT)');
+ xlabel('Time (t)');
+ ylabel('Amplitude');
+% Discrete-Time (DT):
+ n = -5:5;    
+% Discrete time vector
+ step_dt = n >= 0;   
+% Unit step in DT
+ figure;
+ stem(n, step_dt);
+ title('Unit Step Signal (DT)');
+ xlabel('n');
+ ylabel('Amplitude');
+
+ % 5. Program for the generation of ramp signal
+ % Continuous-Time (CT):
+ t = -5:0.01:5;    
+% Time vector
+ ramp_ct = t .* (t >= 0); % Ramp in CT
+ figure;
+ plot(t, ramp_ct);
+ title('Ramp Signal (CT)');
+ xlabel('Time (t)');
+ ylabel('Amplitude');
+ % Discrete-Time (DT):
+ n = -5:5;    
+% Discrete time vector
+ ramp_dt = n .* (n >= 0);   
+% Ramp in DT
+ figure;
+ stem(n, ramp_dt);
+ title('Ramp Signal (DT)');
+ xlabel('n');
+ ylabel('Amplitude');
+
+ % 6. Program for the generation of sine signal
+ % Continuous-Time (CT):
+ t = -5:0.01:5;    
+% Time vector
+ sin_ct = sin(2*pi*t); % Sinusoidal in CT
+ figure;
+ plot(t, sin_ct);
+ title('Sinusoidal Signal (CT)');
+ xlabel('Time (t)');
+ ylabel('Amplitude');
+ % Discrete-Time (DT):
+ n = -5:5;    
+% Discrete time vector
+ sin_dt = sin(2*pi*n/10);   
+% Sinusoidal in DT
+ figure;
+ stem(n, sin_dt);
+ title('Sinusoidal Signal (DT)');
+ xlabel('n');
+ ylabel('Amplitude');
+
+ % 7. Program for the generation of cosine signal 
+% Continuous-Time (CT):
+ t = -5:0.01:5;    
+% Time vector
+ cos_ct = cos(2*pi*t); % Cosine in CT
+ figure;
+ plot(t, cos_ct);
+ title('Cosine Signal (CT)');
+ xlabel('Time (t)');
+ ylabel('Amplitude');
+ % Discrete-Time (DT):
+ n = -5:5;    
+% Discrete time vector
+ cos_dt = cos(2*pi*n/10);   
+% Cosine in DT
+ figure;
+ stem(n, cos_dt);
+ title('Cosine Signal (DT)');
+ xlabel('n');
+ ylabel('Amplitude');
+
+% 1. Program for the generation of rectangular signal 
+% Continuous-Time (CT):
+ t = -5:0.01:5;  % Time vector
+ rect_ct = (t >= -1 & t <= 1);  % Rectangular pulse in CT
+ figure;
+ plot(t, rect_ct);
+ title('Rectangular Signal (CT)');
+ xlabel('Time (t)');
+ ylabel('Amplitude');
+% Discrete-Time (DT):
+ n = -5:5;  % Discrete time vector
+ rect_dt = (n >= -2 & n <= 2);  % Rectangular pulse in DT
+ figure;
+ stem(n, rect_dt);
+ title('Rectangular Signal (DT)');
+ xlabel('n');
+ ylabel('Amplitude');
+
+% 2. Program for the generation of unit impulse signal.
+ % Continuous-Time (CT):
+ t = -5:0.01:5;    % Time vector
+ impulse_ct = t == 0; % Unit impulse in CT
+ figure;
+ stem(t, impulse_ct);
+ title('Unit Impulse Signal (CT)');
+ xlabel('Time (t)');
+ ylabel('Amplitude');
+  % Discrete-Time (DT):
+ n = -5:5;    % Discrete time vector
+ impulse_dt = (n == 0);   % Unit impulse in DT
+ figure;
+ stem(n, impulse_dt);
+ title('Unit Impulse Signal (DT)');
+ xlabel('n');
+ ylabel('Amplitude');
+
+ % 3. Program for the generation of exponential sequence
+ % Continuous-Time (CT):
+ t = -5:0.01:5;    
+% Time vector
+ exp_ct = exp(t);  % Exponential in CT
+ figure;
+ plot(t, exp_ct);
+ title('Exponential Signal (CT)');
+ xlabel('Time (t)');
+ ylabel('Amplitude');
+ % Discrete-Time (DT):
+ n = -5:5;    
+% Discrete time vector
+ exp_dt = exp(n);   
+% Exponential in DT
+ figure;
+ stem(n, exp_dt);
+ title('Exponential Signal (DT)');
+ xlabel('n');
+ ylabel('Amplitude');
+
+ % 4. Program for the generation of unit step signal
+ % Continuous-Time (CT):
+ t = -5:0.01:5;    
+% Time vector
+ step_ct = t >= 0; % Unit step in CT
+ figure;
+ plot(t, step_ct);
+ title('Unit Step Signal (CT)');
+ xlabel('Time (t)');
+ ylabel('Amplitude');
+% Discrete-Time (DT):
+ n = -5:5;    
+% Discrete time vector
+ step_dt = n >= 0;   
+% Unit step in DT
+ figure;
+ stem(n, step_dt);
+ title('Unit Step Signal (DT)');
+ xlabel('n');
+ ylabel('Amplitude');
+
+ % 5. Program for the generation of ramp signal
+ % Continuous-Time (CT):
+ t = -5:0.01:5;    
+% Time vector
+ ramp_ct = t .* (t >= 0); % Ramp in CT
+ figure;
+ plot(t, ramp_ct);
+ title('Ramp Signal (CT)');
+ xlabel('Time (t)');
+ ylabel('Amplitude');
+ % Discrete-Time (DT):
+ n = -5:5;    
+% Discrete time vector
+ ramp_dt = n .* (n >= 0);   
+% Ramp in DT
+ figure;
+ stem(n, ramp_dt);
+ title('Ramp Signal (DT)');
+ xlabel('n');
+ ylabel('Amplitude');
+
+ % 6. Program for the generation of sine signal
+ % Continuous-Time (CT):
+ t = -5:0.01:5;    
+% Time vector
+ sin_ct = sin(2*pi*t); % Sinusoidal in CT
+ figure;
+ plot(t, sin_ct);
+ title('Sinusoidal Signal (CT)');
+ xlabel('Time (t)');
+ ylabel('Amplitude');
+ % Discrete-Time (DT):
+ n = -5:5;    
+% Discrete time vector
+ sin_dt = sin(2*pi*n/10);   
+% Sinusoidal in DT
+ figure;
+ stem(n, sin_dt);
+ title('Sinusoidal Signal (DT)');
+ xlabel('n');
+ ylabel('Amplitude');
+
+ % 7. Program for the generation of cosine signal 
+% Continuous-Time (CT):
+ t = -5:0.01:5;    
+% Time vector
+ cos_ct = cos(2*pi*t); % Cosine in CT
+ figure;
+ plot(t, cos_ct);
+ title('Cosine Signal (CT)');
+ xlabel('Time (t)');
+ ylabel('Amplitude');
+ % Discrete-Time (DT):
+ n = -5:5;    
+% Discrete time vector
+ cos_dt = cos(2*pi*n/10);   
+% Cosine in DT
+ figure;
+ stem(n, cos_dt);
+ title('Cosine Signal (DT)');
+ xlabel('n');
+ ylabel('Amplitude');
