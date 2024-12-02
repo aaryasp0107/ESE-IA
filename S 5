@@ -1,0 +1,21 @@
+S 5
+syms a n;
+xn=1^n;
+Xz=ztrans(xn);
+disp('x(n)')
+pretty(xn);
+disp('X(z)');
+pretty((Xz));
+
+syms n;
+xn=(1/2)^n+(-1/3)^n;
+Xz=ztrans(xn);
+izx=iztrans(Xz);
+disp('x(n)');
+pretty(xn);
+disp('X(z)');
+pretty(Xz);
+disp('izx');
+pretty(izx);
+
+
