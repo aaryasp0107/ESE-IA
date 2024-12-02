@@ -1,7 +1,7 @@
 %[1, 0.25, 0.3, 4, 5, 6, 7, 8]
 % 8
 
-%slip 6 skill
+%6 skill
 %with function
 n = 0:6;
 x = [4 6 2 1 7 4 8]; % function is given
