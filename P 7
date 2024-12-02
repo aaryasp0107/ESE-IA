@@ -1,0 +1,20 @@
+P 7
+% Given parameters
+Fs = 720; % Sampling frequency
+
+% Finding order and Natural frequency
+[N, wn] = buttord(10*2/Fs, 20*2/Fs, 3, 40);
+
+% Finding the numerator and denominator coefficients of the transfer function
+[B, A] = butter(N, wn);
+
+% Plotting poles and zeros
+figure();
+zplane(B, A); % Alternative to pzmap
+title('Pole-Zero Map of Butterworth Filter');
+
+% Plotting Bode plot
+figure();
+freqz(B, A, 1024, Fs); % freqz can be used instead of bodeplot
+title('Bode Plot of Butterworth Filter');
+
